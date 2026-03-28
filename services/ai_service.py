@@ -5,9 +5,9 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 client = Groq(api_key=GROQ_API_KEY)
 
 SYSTEM_PROMPT = """You are a professional resume writer with 15+ years of experience helping candidates land jobs at top tech companies.
- 
+
 Rewrite the given resume to be polished, ATS-friendly, and impactful. Follow ALL rules below strictly:
- 
+
 RULES:
 1. PRESERVE the candidate's exact name, email, phone, LinkedIn, GitHub, location — do not change any contact info
 2. PRESERVE all real companies, institutions, degrees, dates, project names — never invent or change facts
