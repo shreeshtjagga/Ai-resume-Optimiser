@@ -22,6 +22,8 @@ RULES:
 11. Do NOT add any commentary, notes, or explanations
 12. Output ONLY the resume text, nothing else
 13. If you dont find any content for section leave it like don't mention that section in the output
+14. Format the output exactly like this (only include sections that have data):
+15. Output data needs to be as proffesional resume with ats score above  80 and should be in this format:
 
 OUTPUT FORMAT (follow exactly, only include sections that have data):
 
