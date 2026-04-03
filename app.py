@@ -1,6 +1,5 @@
 from pathlib import Path
 import streamlit as st
-
 from services.ai_service import optimize_resume
 from services.docx_service import extract_text_from_docx
 from services.pdf_service import extract_text_from_pdf
@@ -71,8 +70,8 @@ def _render_ats_score(result: ATSResult, label: str) -> None:
                 st.markdown(f"- {tip}")
 
 
-st.title("AI Resume Optimizer")
-st.caption("Upload your resume → get a professional, ATS-optimized version instantly.")
+st.markdown("h1  style='text-align:center;'> AI Resume Optimizer</h1>",unsafe_allow_html=True)
+st.markdown('<p style="text-align:center; color:gray;">Upload your resume to get an ATS-optimized version instantly.</p>', unsafe_allow_html=True)
 st.divider()
 
 uploaded_file = st.file_uploader(
