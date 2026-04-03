@@ -70,7 +70,7 @@ def _render_ats_score(result: ATSResult, label: str) -> None:
                 st.markdown(f"- {tip}")
 
 
-st.markdown("h1  style='text-align:center;'> AI Resume Optimizer</h1>",unsafe_allow_html=True)
+st.markdown("<h1  style='text-align:center;'> AI Resume Optimizer</h1>",unsafe_allow_html=True)
 st.markdown('<p style="text-align:center; color:gray;">Upload your resume to get an ATS-optimized version instantly.</p>', unsafe_allow_html=True)
 st.divider()
 
@@ -169,7 +169,7 @@ if "optimized" in st.session_state:
         st.info("ATS score unchanged — the resume was already well-structured.")
     else:
         st.warning(f" ATS score changed by {delta} points. Review the tips above.")
-
+    st.caption("Note: The ATS score is given based on user input resume details .Use the tips in the score breakdown to further improve your resume.")
     st.divider()
 
     st.subheader("Optimized Resume")
